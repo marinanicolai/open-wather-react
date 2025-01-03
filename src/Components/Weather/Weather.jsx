@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 function Weather() {
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.REACT_APP_API_KEY;
 let location = 'New York';
 useEffect(() => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`)
